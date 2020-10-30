@@ -1,0 +1,35 @@
+class conversion{
+public static void main(String args[])
+{ int a=100;
+double c=456.987;
+byte b;
+
+System.out.print("int to double:");
+b=(byte)a;
+System.out.println(b);
+a=(int)c;
+System.out.println("double to int:"+a);
+b=(byte)c;
+System.out.println("double to byte:"+b);
+//int to string
+a=10;
+String data=String.valueOf(a);
+System.out.println("Int to String:"+data);
+
+//String to int
+String s="10";
+System.out.println("Current string value"+s);
+int num=Integer.parseInt(data);
+System.out.println("String to int is:"+num);
+
+
+}
+}
+/*OUTPUT
+java conversion
+int to double:100
+double to int:456
+double to byte:-56
+Int to String:10
+Current string value10
+String to int is:10*/
