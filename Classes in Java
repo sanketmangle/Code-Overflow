@@ -1,0 +1,64 @@
+class Figure
+{
+double dim1;
+double dim2;
+Figure (double a,double b)
+ {
+ dim1=a;
+ dim2=b;
+ }
+double area() 
+ {
+ System.out.println("is defined");
+ return 0;
+ }
+} 
+
+class Rectangle extends Figure{
+ Rectangle(double a,double b)
+ {
+ super(a,b);
+ }
+ double area()
+ {
+ System.out.println("inside rectangle");
+ return dim1*dim2;
+ }
+}
+
+ class Triangle extends Figure{
+  Triangle(double a, double b)
+  {
+  super(a,b);
+  }
+  double area()
+  {System.out.println("Inside triangle");
+  return dim1*dim2/2;
+  }
+ } 
+
+class findarea1{
+
+public static void main(String args[])
+{
+
+Figure f=new Figure(10,10);
+Rectangle r= new Rectangle(9,5);
+Triangle t=new Triangle(10,8);
+
+f=f;
+System.out.println("Area is"+f.area());
+f=r;
+System.out.println("Area is"+ f.area());
+f= t;
+System.out.println("Area is"+f.area());
+
+}
+}
+/*OUTPUT
+is defined
+Area is0.0
+inside rectangle
+Area is45.0
+Inside triangle
+Area is40.0*/
