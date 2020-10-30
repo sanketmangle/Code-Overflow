@@ -1,0 +1,16 @@
+#Program for Bubble Sort using python
+
+b = []
+number = int(input("Enter the Total Number of Elements : "))
+for i in range(number):
+    value = int(input("Enter %d Element of List1 : " %i))
+    b.append(value)
+
+for i in range(number -1):
+    for j in range(number - i - 1):
+        if(b[j] > b[j + 1]):
+             temp = b[j]
+             b[j] = b[j + 1]
+             b[j + 1] = temp
+
+print("Sorted List in Ascending Order is : ", b)
