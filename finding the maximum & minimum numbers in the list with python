@@ -1,7 +1,0 @@
-lst=[]
-rang=int(input("Enter range of list"))
-for i in range(rang):
-    obj=int(input("Enter numbers  "))
-
-    lst.append(obj)
-print("the maximum number is {} and the minimum number is {} ".format(max(lst),min(lst))) 
