@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int a_to_i(char a);
+char i_to_a(int i);
+
+int main() {
+
+        char a;
+        int i;
+        
+        cout << "Type in a character: ";
+        cin >> a;
+        cout << "ASCII Decimal value: " << a_to_i(a) << endl;
+        
+        cout << "Type in a number: ";
+        cin >> i;
+        cout << "ASCII Character value: " << i_to_a(i) << endl;
+        
+        return 0;
+}
+
+int a_to_i(char a) {
+        return (int) a;
+}
+
+char i_to_a(int i) {
+        return (char) i;
+}
