@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int i,vowels_count=0,consonants_count=0,n;
+    string s;
+    cin>>s;
+    n=s.size();
+    for(i=0;i<n;i++){
+        if(s[i]=='a') vowels_count++;
+        else if(s[i]=='e') vowels_count++;
+        else if(s[i]=='i') vowels_count++;
+        else if(s[i]=='o') vowels_count++;
+        else if(s[i]=='u') vowels_count++;
+    }
+    consonants_count=n-vowels_count;
+    cout<<vowels_count<<" "<<consonants_count;
+}
