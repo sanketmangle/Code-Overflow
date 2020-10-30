@@ -1,0 +1,13 @@
+ public class CountVowelConsonant {    
+        public static void main(String[] args) {    
+            
+            // String Handling
+            
+            char[] myArray = {'W' , 'e' , 'l' ,'c' , 'o' , 'm' ,'e'};
+            
+            // Sequence of characters
+            String firstString = "Welcome";
+           
+            System.out.println("lenght of a string" +" : " + firstString.length());     
+        }    
+    }
