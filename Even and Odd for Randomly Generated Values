@@ -1,0 +1,26 @@
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+
+using namespace std;
+
+int main() {
+        
+        int num;
+        srand(time(NULL));
+        
+        num = rand() % 6;
+        cout << "num = " << num << endl;
+        
+        if(num == 0) {
+                cout << "Bummer, I'm zero!!!" << endl;
+        } else if ((num % 2) == 1) {
+                cout << "I'm an odd number!" << endl;
+                if(num == 1) {
+                        cout << "I'm the number 1!" << endl;
+                }
+        } else {
+                cout << "I'm an even number!" << endl;
+        }
+        return 0;
+}
