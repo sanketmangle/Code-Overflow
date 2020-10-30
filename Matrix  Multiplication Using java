@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class MatrixMultiplication {
+
+	public static void main(String[] args) {
+		int r1,c1,r2,c2;
+		int[][] result  = new int[10][10];
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of rows&columns in first matrix");
+		r1 = sc.nextInt();
+		c1 = sc.nextInt();
+		System.out.println("Enter the number of rows&columns in second matrix");
+		r2 = sc.nextInt();
+		c2 = sc.nextInt();
+		
+	if(c1!=r2) {
+		System.out.println("Matrix multiplication not possible");
+	}
+	else {
+		System.out.println("Enter the elements of first matrix");
+		int[][] first = new int[10][10]; 
+		
+		for(int i=0;i<r1;i++) {
+			for(int j=0;j<c1;j++) {
+				first[i][j] = sc.nextInt();
+			}
+		}//end of for
+		System.out.println("Enter the elements of second matrix");
+		int[][] second = new int[10][10];
+		
+		for(int i=0;i<r2;i++) {
+			for(int j=0;j<c2;j++) {
+				second[i][j] = sc.nextInt();
+			}
+		}//end of for
+		System.out.println("The product of the two matrices is ");
+	int res = 0;
+	 for(int i=0;i<r1;i++) {
+		 for(int j=0;j<c2;j++) {
+			 for(int k=0;k<r2;k++) {
+				 res = res+first[i][k]*second[k][j];
+				 
+			 }// end of for(k)
+			 result[i][j] =res;
+			 res=0;
+		 }// end of for(j)
+	 }//end of for(i)
+	for(int i=0;i<r1;i++) {
+		for(int j=0;j<c2;j++) {
+			System.out.printf("%d\t",result[i][j]);
+		}
+		System.out.println();
+	}
+sc.close();
+	}
+	}
+
+}

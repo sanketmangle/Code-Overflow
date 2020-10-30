@@ -1,0 +1,11 @@
+GivenYear=1999
+if (GivenYear % 4) == 0:
+   if (GivenYear % 100) == 0:
+       if (GivenYear % 400) == 0:
+           print(f'{GivenYear} is a leap year')
+       else:
+           print(f'{GivenYear} is not a leap year')
+   else:
+       print(f'{GivenYear} is a leap year')
+else:
+   print(f'{GivenYear} is not a leap year')

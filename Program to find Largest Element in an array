@@ -1,0 +1,8 @@
+Elements = [100,220,307,209]
+
+if Elements[0]>Elements[1] and Elements[0]>Elements[2]:
+	print(f'{Elements[0]} is the largest element')
+elif Elements[1]>Elements[0] and Elements[1]>Elements[2]:
+	print(f'{Elements[1]} is the largest element')
+else :
+	print(f'{Elements[2]} is the largest element')

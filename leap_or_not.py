@@ -1,4 +1,4 @@
-# Check if a year is a leap year or not
+# Program to check if a year is a leap year or not
 def is_leap(year):
     if year % 4 == 0:
         if year % 100 == 0:

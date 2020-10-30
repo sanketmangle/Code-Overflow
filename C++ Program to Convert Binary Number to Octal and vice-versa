@@ -1,0 +1,91 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int convertBinarytoOctal(long long);
+int main()
+{
+    long long binaryNumber;
+
+    cout << "Enter a binary number: ";
+    cin >> binaryNumber;
+
+    cout << binaryNumber << " in binary = " << convertBinarytoOctal(binaryNumber) << " in octal ";
+
+    return 0;
+}
+
+int convertBinarytoOctal(long long binaryNumber)
+{
+    int octalNumber = 0, decimalNumber = 0, i = 0;
+
+    while(binaryNumber != 0)
+    {
+        decimalNumber += (binaryNumber%10) * pow(2,i);
+        ++i;
+        binaryNumber/=10;
+    }
+
+    i = 1;
+
+    while (decimalNumber != 0)
+    {
+        octalNumber += (decimalNumber % 8) * i;
+        decimalNumber /= 8;
+        i *= 10;
+    }
+
+    return octalNumber;
+}
+Output
+
+Enter a binary number: 10001
+10001 in binary = 21 in octal
+The binary number entered by the user is passed to convertBinaryToOctal() function. And, this function converts the number to octal and returns to the main() function
+
+Example 2: Program to Convert Octal to Binary
+
+In this program, the octal number is converted to decimal at first. Then, the decimal number is converted to binary number.
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+long long convertOctalToBinary(int);
+int main()
+{
+    int octalNumber;
+
+    cout << "Enter an octal number: ";
+    cin >> octalNumber;
+
+    cout << octalNumber << " in octal = " << convertOctalToBinary(octalNumber) << "in binary";
+
+    return 0;
+}
+
+long long convertOctalToBinary(int octalNumber)
+{
+    int decimalNumber = 0, i = 0;
+    long long binaryNumber = 0;
+
+    while(octalNumber != 0)
+    {
+        decimalNumber += (octalNumber%10) * pow(8,i);
+        ++i;
+        octalNumber/=10;
+  }
+
+    i = 1;
+
+    while (decimalNumber != 0)
+    {
+        binaryNumber += (decimalNumber % 2) * i;
+        decimalNumber /= 2;
+        i *= 10;
+    }
+
+    return binaryNumber;
+}

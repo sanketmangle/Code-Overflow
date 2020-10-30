@@ -1,0 +1,26 @@
+print("   MENU  ")
+print("1.Binary to decimal")
+print("2.Decimal to binary")
+choice=int(input("Enter your choice(1/2):"))
+if(choice==1):
+    b=int(input("Enter the binary number:"))
+    temp=b
+    p=1
+    n=0
+    while(temp):
+        rem=temp%10
+        temp=temp//10
+        n=n+(rem*p)
+        p=p*2
+    print(n)
+elif(choice==2):
+    d=int(input("enter a decimal number:"))
+    bi=''
+    while(d):
+        rem=d%2
+        d=d//2
+        bi=bi+str(rem)
+    bi=bi+str(d)
+    print(bi[::-1])
+else:
+    print("Wrong choice")

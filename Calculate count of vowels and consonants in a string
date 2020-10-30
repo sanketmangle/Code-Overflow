@@ -1,0 +1,12 @@
+v=c=0
+st=input("Enter the string:")
+vowel=['a','e','i','o','u']
+for i in st.lower():
+    if i is " ":
+        continue
+    elif(i in vowel):
+        v=v+1
+    else:
+        c=c+1
+print("Vowel count:",v)
+print("Consonants count:",c)

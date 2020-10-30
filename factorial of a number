@@ -1,0 +1,14 @@
+c='Y'
+while(c=='Y' or c=='y'):
+    fact=1
+    d=int(input("ENTER A NUMBER:"))
+    if(d<0):
+        print("INVALID NUMBER")
+    elif(d==0 or d==1):
+        print("factorial:",fact)
+    else:
+        for i in range(2,d+1):
+            fact=fact*i
+        print("factorial:",fact)
+    c=input("Do you want to continue(Y/N):")
+    

@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name[7];
+	int password;
+	printf("enter the name :");
+	scanf("%s",&name);
+	printf("enter password :");
+	scanf("%d",&password);
+	
+if(strcmp(name,"hetz")==0 &&(password==1234)){
+    printf("Scessfull!!");
+    }
+    else{
+        printf("FALSE");
+    }
+    return 0;
+}
