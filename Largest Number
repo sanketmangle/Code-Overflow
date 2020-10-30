@@ -1,0 +1,18 @@
+/* C Program to Find Largest of Two numbers */ 
+   
+#include <stdio.h>  
+   
+int main() {  
+    int a, b, largest;
+    printf("Please Enter Two Different Values\n");  
+    scanf("%d %d", &a, &b);  
+   
+    switch(a > b) 
+    {     
+        case 1: printf("%d is Largest", a);  
+                break;  
+        case 2: printf("%d is Largest", b);  
+                break;  
+    }  
+    return 0;  
+}
