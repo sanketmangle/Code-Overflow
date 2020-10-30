@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int i,j,k,n,m;
+    cin>>n;
+    k=1;
+    for(i=1;i<=n;i++){
+        k*=i;
+    }
+    cout<<k<<endl;
+}
