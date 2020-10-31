@@ -1,0 +1,22 @@
+// Java Program to Perform Division and Modulus on Float data type 
+
+package JavaOperators;
+
+public class ArithmeticOperatorsUsingFloat {
+	
+	public static void main(String[] args) {
+		int a = 25, b = 4;
+		int integerdiv, modulus;
+		float floatdiv;
+
+		integerdiv = a / b;
+		modulus = a % b;
+		floatdiv = (float)a / b;
+		
+		System.out.format(" Division of two numbers %d, %d is : %d\n", a, b, integerdiv);
+		System.out.format(" Modulus of two numbers %d, %d is : %d\n", a, b, modulus);
+		
+		System.out.println(" \n---------Correct Results is--------- ");
+		System.out.format(" Division of two numbers %d, %d is : %.3f", a, b, floatdiv);
+	}
+}
