@@ -1,0 +1,10 @@
+vowl=['a','i','e','u','o']
+num_vowl=0
+num_cons=0
+string=input("Enter any string")
+for i in string:
+    if i in vowl:
+        num_vowl+=1
+    else:
+        num_cons+=1
+print("number of vowels:{} , number of consonants:{}".format(num_vowl,num_cons))   
