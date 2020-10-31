@@ -1,0 +1,9 @@
+def add_two_nums_without_plus_operator(a, b):
+    while b != 0:
+        data = a & b
+        a = a ^ b
+        b = data << 1
+    return a
+print(add_two_nums_without_plus_operator(4, 20))
+print(add_two_nums_without_plus_operator(-80, 100))
+print(add_two_nums_without_plus_operator(-100, -250))
