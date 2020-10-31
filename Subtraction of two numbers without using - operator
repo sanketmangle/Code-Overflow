@@ -1,0 +1,12 @@
+def subtract_two_nums_without_minus_operator(x, y): 
+
+    while (y != 0):
+        borrow = (~x) & y 
+        x = x ^ y 
+        y = borrow << 1
+    return x 
+
+subtract_two_nums_without_minus_operator(10,-7)
+subtract_two_nums_without_minus_operator(10,7)
+subtract_two_nums_without_minus_operator(-10,7)
+subtract_two_nums_without_minus_operator(-10,-7)
